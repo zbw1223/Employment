@@ -1,0 +1,2 @@
+rootProject.name = "recriutingsystem"
+include ':app'

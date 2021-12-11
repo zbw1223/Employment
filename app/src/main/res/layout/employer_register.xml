@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical">
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="62dp"
+        android:src="@drawable/back"
+        android:id="@+id/btn_back"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="企业认证"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="像求职者介绍一下自己吧"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:text="企业名称"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:hint="请填写企业名称"
+        android:textSize="20sp"
+        android:background="@drawable/edit_background"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#a3a3a3"
+        android:id="@+id/bname"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:text="企业所在地"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:minLines="2"
+        android:gravity="top"
+        android:background="@drawable/edit_background"
+        android:hint="请填写企业所在地"
+        android:textColor="#000000"
+        android:textColorHint="#a3a3a3"
+        android:id="@+id/location"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:text="企业介绍"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:minLines="4"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:background="@drawable/edit_background"
+        android:textColor="#000000"
+        android:textColorHint="#a3a3a3"
+        android:hint="简述一下企业业务"
+        android:id="@+id/introduce"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:text="联系方式"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:background="@drawable/edit_background"
+        android:textColor="#000000"
+        android:textColorHint="#a3a3a3"
+        android:hint="请填写联系方式"
+        android:id="@+id/cinfo"
+        />
+
+    <Button
+        android:layout_width="800dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bbg1"
+        android:textSize="20sp"
+        android:text="完成"
+        android:id="@+id/finisher"/>
+</LinearLayout>
+</ScrollView>

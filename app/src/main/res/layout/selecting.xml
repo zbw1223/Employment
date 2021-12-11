@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="62dp"
+        android:src="@drawable/back"/>
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/employee"/>
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bbg1"
+        android:layout_marginTop="10dp"
+        android:text="我要找工作"
+        android:id="@+id/Seek"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#83738F"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="5dp"></View>
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/employer"/>
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bbg1"
+        android:layout_marginTop="10dp"
+        android:text="我要招人"
+        android:id="@+id/Employ"/>
+
+</LinearLayout>

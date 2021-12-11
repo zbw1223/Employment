@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.recriutingsystem">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mainPage_ee"></activity>
+        <activity android:name=".mainPage_er"></activity>
+        <activity android:name=".register"></activity>
+        <activity android:name=".Selecting"></activity>
+        <activity android:name=".Employee"></activity>
+        <activity android:name=".Employer"></activity>
+        <activity android:name=".MsgPage"></activity>
+        <activity android:name=".Position_edit"></activity>
+        <activity android:name=".ChangePsd_er"></activity>
+        <activity android:name=".ChangePsd_ee"></activity>
+        <activity android:name=".Searchee"></activity>
+        <activity android:name=".Details_ee"></activity>
+        <activity android:name=".Details1_ee"></activity>
+        <activity android:name=".Details1_er"></activity>
+        <activity android:name=".Searcher"></activity>
+        <activity android:name=".Details_er"></activity>
+        <activity android:name=".Recriuting"></activity>
+        <activity android:name=".Search_intention"></activity>
+        <activity android:name=".information_ee_change"></activity>
+        <activity android:name=".information_er_change"></activity>
+    </application>
+
+</manifest>

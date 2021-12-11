@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg1"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="个人信息填写"
+            android:textStyle="bold"
+            android:textColor="#030303"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#030303"
+            android:text="你需要填写基础信息完成注册"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:text="你的姓名"
+            android:textColor="#030303"
+            android:textSize="20sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittextstyle"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#a3a3a3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/name"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:text="性别"
+            android:textColor="#030303"
+            android:textSize="20sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:background="@drawable/edittextstyle"
+            android:textColor="#000000"
+            android:textColorHint="#a3a3a3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/sex"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:text="出生年月"
+            android:textColor="#030303"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittextstyle"
+            android:inputType="none"
+            android:textColor="#000000"
+            android:textColorHint="#a3a3a3"
+            android:focusable="true"
+
+            android:focusableInTouchMode="true"
+            android:id="@+id/bir"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:text="你的学历是"
+            android:textColor="#030303"
+            android:textSize="20sp" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/degree"
+            android:entries="@array/degree"
+            android:spinnerMode="dropdown"
+            android:theme="@style/Spinner"
+            android:background="@drawable/spinner"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:text="毕业院校"
+            android:textColor="#030303"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittextstyle"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#a3a3a3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/school"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:text="工作经验"
+            android:textColor="#030303"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittextstyle"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#a3a3a3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="没有可以填无"
+            android:id="@+id/exe"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:text="就业方向"
+            android:textColor="#030303"
+            android:textSize="20sp" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/inter"
+            android:entries="@array/interst"
+            android:spinnerMode="dropdown"
+            android:theme="@style/Spinner"
+            android:background="@drawable/spinner"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:text="感兴趣的工作城市"
+            android:textColor="#030303"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittextstyle"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#a3a3a3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            android:id="@+id/city"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:text="期望月薪"
+            android:textColor="#030303"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#030303"
+            android:text="单位：千元 1K代表1000元"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittextstyle"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#a3a3a3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/minsalary"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bbg1"
+            android:text="完成"
+            android:textSize="20sp"
+            android:id="@+id/finishee"/>
+    </LinearLayout>
+</ScrollView>

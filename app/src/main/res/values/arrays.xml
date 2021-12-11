@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="degree">
+        <item>大专</item>
+        <item>本科</item>
+        <item>硕士</item>
+        <item>博士</item>
+    </string-array>
+    <string-array name="interst">
+        <item>产品经理</item>
+        <item>前端工程师</item>
+        <item>后端工程师</item>
+        <item>Java架构师</item>
+        <item>软件测试</item>
+        <item>算法工程师</item>
+    </string-array>
+</resources>

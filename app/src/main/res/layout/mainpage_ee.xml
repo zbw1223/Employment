@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/main_bottom_tabs">
+
+        <RadioButton
+            android:id="@+id/main_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/main_home_selector"
+            android:text="首页"
+            android:textColor="#030303"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_sa"
+            android:button="@null"
+            android:layout_weight="1"
+            android:text="聊天"
+            android:drawableTop="@drawable/main_chat_selector"
+            android:gravity="center"
+            android:textColor="#030303"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_my"
+            android:drawableTop="@drawable/main_mine_selector"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="我的"
+            android:gravity="center"
+            android:textColor="#030303"/>
+    </RadioGroup>
+
+</LinearLayout>
