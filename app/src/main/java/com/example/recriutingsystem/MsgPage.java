@@ -9,7 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.sql.BatchUpdateException;
+import com.example.recriutingsystem.entity.Msg;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,7 +47,8 @@ public class MsgPage extends AppCompatActivity{
             public void onClick(View v) {
                 String content = inputText.getText().toString();
                 if (!"".equals(content)) {
-                    Msg msg = new Msg(content, Msg.TYPE_SENT);
+                    Msg msg = new Msg(userService.getUid(),7,null,content);
+                    userService.sendMessage(userService.getUid(),7,content);
                     msgList.add(msg);
                     // 当有新消息时，刷新ListView中的显示
                     adapter.notifyItemInserted(msgList.size() - 1);
@@ -63,46 +65,8 @@ public class MsgPage extends AppCompatActivity{
      * 初始化聊天消息
      */
     private void initMsgs() {
-        List<Message> mList=userService.getChat();
-        List<Message> receive=new ArrayList<Message>();
-        List<Message> send=new ArrayList<Message>();
-        int type=userService.getType();
         int uid=userService.getUid();
-        if(type==0)
-        {
-            for(int i=0;i<mList.size();i++)
-            {
-                if(mList.get(i).getjUid()==uid){
-                    if(mList.get(i).getType()==0)
-                    {
-
-                        msgList.add(new Msg(mList.get(i).getMassage(),Msg.TYPE_RECEIVED));
-                        receive.add(mList.get(i));
-                    }
-                    else {
-                        msgList.add(new Msg(mList.get(i).getMassage(),Msg.TYPE_SENT));
-                        send.add(mList.get(i));
-                    }
-                }
-            }
-        }
-        else {
-            for(int i=0;i<mList.size();i++)
-            {
-                if(mList.get(i).getbUid()==uid){
-                    if(mList.get(i).getType()==0)
-                    {
-                        msgList.add(new Msg(mList.get(i).getMassage(),Msg.TYPE_SENT));
-                        send.add(mList.get(i));
-                    }
-                    else {
-                        msgList.add(new Msg(mList.get(i).getMassage(),Msg.TYPE_RECEIVED));
-                        receive.add(mList.get(i));
-
-                    }
-                }
-            }
-        }
+        msgList=userService.getChat(uid);
 //        Msg msg1 = new Msg("Hello guy.", Msg.TYPE_RECEIVED);
 //        msgList.add(msg1);
 //        Msg msg2 = new Msg("Hello. Who is that?", Msg.TYPE_SENT);

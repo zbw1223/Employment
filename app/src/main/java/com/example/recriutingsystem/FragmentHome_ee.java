@@ -12,6 +12,9 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
+import com.example.recriutingsystem.entity.Business;
+import com.example.recriutingsystem.entity.Recruit;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

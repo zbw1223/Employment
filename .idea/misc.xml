@@ -3,19 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/drawable/main_chat_selector.xml" value="0.22314814814814815" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/activity_main.xml" value="0.146875" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/change_password_ee.xml" value="0.10625" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/change_password_er.xml" value="0.146875" />
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/chat_main_ee.xml" value="0.2463768115942029" />
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/chat_main_er.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/chatlistview_ee.xml" value="0.2463768115942029" />
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/chatlistview_er.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/details_ee.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/details_ee1.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/details_er.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/details_er1.xml" value="0.25416666666666665" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/employee_register.xml" value="0.264" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/employer_register.xml" value="0.1" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/home_main_ee.xml" value="0.146875" />
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/home_main_er.xml" value="0.1" />
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/information_ee_change.xml" value="0.25416666666666665" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/information_er_change.xml" value="0.146875" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/login.xml" value="0.146875" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/mainpage_ee.xml" value="0.146875" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/mainpage_er.xml" value="0.146875" />
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/message_page.xml" value="0.25416666666666665" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/mine_main_ee.xml" value="0.146875" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/mine_main_er.xml" value="0.146875" />
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/msg_item.xml" value="0.25416666666666665" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/position_edit.xml" value="0.264" />
+        <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/position_edit_listview.xml" value="0.264" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/recruiting.xml" value="0.146875" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/register.xml" value="0.146875" />
         <entry key="..\:/MyApps/RecruitSystem/app/src/main/res/layout/search_ee.xml" value="0.1" />

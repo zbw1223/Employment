@@ -5,17 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
     <FrameLayout
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"></FrameLayout>
+        android:layout_weight="1"
+        android:background="#FFFFFF"></FrameLayout>
     <RadioGroup
         android:id="@+id/main_bottom_tabs"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,6 +27,8 @@
             android:button="@null"
             android:drawableTop="@drawable/main_home_selector"
             android:gravity="center"
+            android:background="#FFFFFF"
+            android:textColor="#030303"
             android:text="首页">
         </RadioButton>
         <RadioButton
@@ -31,18 +36,22 @@
             android:layout_height="wrap_content"
             android:id="@+id/main_chat"
             android:layout_weight="1"
+            android:background="#FFFFFF"
             android:button="@null"
             android:drawableTop="@drawable/main_chat_selector"
             android:gravity="center"
+            android:textColor="#030303"
             android:text="聊天">
         </RadioButton><RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/main_mine"
         android:layout_weight="1"
+        android:background="#FFFFFF"
         android:button="@null"
         android:drawableTop="@drawable/main_mine_selector"
         android:gravity="center"
+        android:textColor="#030303"
         android:text="我的">
     </RadioButton>
     </RadioGroup>

@@ -3,17 +3,13 @@ package com.example.recriutingsystem;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.recriutingsystem.entity.Recruit;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -28,10 +24,10 @@ public class Position_edit extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.position_edit);
         userService=UserService.getUserService();
-        ListView listview = (ListView) findViewById(R.id.position);;
+        ListView listview = (ListView) findViewById(R.id.position);
         PositionEditAdapter adapter = new PositionEditAdapter(this,getData(),R.layout.position_edit_listview,
-                new String[]{ "position_name","position_change","position_delete"},
-                new int[]{ R.id.position_name, R.id.position_change, R.id.position_delete});
+                new String[]{ "position_name","position_delete"},
+                new int[]{ R.id.position_name, R.id.position_delete});
         listview.setAdapter(adapter);
 //        listview.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 //            @Override

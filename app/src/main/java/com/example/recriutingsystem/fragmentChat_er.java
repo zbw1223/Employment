@@ -40,9 +40,10 @@ public class fragmentChat_er extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Bundle bundle = new Bundle();
                 bundle.putString("name",name[i]);
+                bundle.putString("destination",Integer.toString(i));
                 Intent intent =new Intent();
                 intent.putExtras(bundle);
-               mainPage_er mcontext =(mainPage_er)getActivity();
+                mainPage_er mcontext =(mainPage_er)getActivity();
                 intent.setClass(mcontext,MsgPage.class);
                 startActivity(intent);
             }

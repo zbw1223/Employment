@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:padding="10dp">
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg1"
@@ -63,7 +62,7 @@
             android:hint="请填写企业所在地"
             android:textColor="#000000"
             android:textColorHint="#a3a3a3"
-            android:id="@+id/location"
+            android:id="@+id/city"
             />
 
 
@@ -76,27 +75,26 @@
             android:textSize="20sp" />
 
         <EditText
+            android:id="@+id/introduce"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:layout_marginTop="10dp"
-            android:textSize="20sp"
-            android:minLines="4"
+            android:background="@drawable/edit_background"
             android:gravity="top"
+            android:hint="简述一下企业业务"
             android:inputType="textMultiLine"
             android:maxLines="5"
+            android:minLines="4"
             android:scrollbars="vertical"
-            android:background="@drawable/edit_background"
             android:textColor="#000000"
             android:textColorHint="#a3a3a3"
-            android:hint="简述一下企业业务"
-            android:id="@+id/business"
-            />
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="15dp"
-            android:text="联系方式"
+            android:text="邮箱"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -110,7 +108,7 @@
             android:textColor="#000000"
             android:textColorHint="#a3a3a3"
             android:hint="请填写联系方式"
-            android:id="@+id/cinfo"
+            android:id="@+id/email"
             />
 
         <Button

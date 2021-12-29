@@ -8,7 +8,8 @@
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:background="#FFFFFF"/>
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -25,7 +26,8 @@
             android:gravity="center"
             android:drawableTop="@drawable/main_home_selector"
             android:text="首页"
-            android:textColor="#030303"/>
+            android:textColor="#030303"
+            android:background="#FFFFFF"/>
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -36,7 +38,8 @@
             android:text="聊天"
             android:drawableTop="@drawable/main_chat_selector"
             android:gravity="center"
-            android:textColor="#030303"/>
+            android:textColor="#030303"
+            android:background="#FFFFFF"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +49,8 @@
             android:button="@null"
             android:text="我的"
             android:gravity="center"
-            android:textColor="#030303"/>
+            android:textColor="#030303"
+            android:background="#FFFFFF"/>
     </RadioGroup>
 
 </LinearLayout>

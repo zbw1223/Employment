@@ -56,6 +56,19 @@
             android:text="毕业院校"
             android:textColor="#030303"
             android:textSize="20sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittextstyle"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#a3a3a3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/school"
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -104,21 +117,9 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="15dp"
-            android:text="你的学历是"
+            android:text="学历"
             android:textColor="#030303"
             android:textSize="20sp" />
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:id="@+id/degree"
-            android:entries="@array/degree"
-            android:spinnerMode="dropdown"
-            android:theme="@style/Spinner"
-            android:background="@drawable/spinner"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            />
-
         <EditText
             android:layout_width="match_parent"
             android:layout_height="45dp"
@@ -130,8 +131,10 @@
             android:textColorHint="#a3a3a3"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:id="@+id/school"
+            android:id="@+id/degree"
             />
+
+
 
         <TextView
             android:layout_width="match_parent"
@@ -165,13 +168,16 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:id="@+id/inter"
-            android:entries="@array/interst"
-            android:spinnerMode="dropdown"
-            android:theme="@style/Spinner"
-            android:background="@drawable/spinner"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittextstyle"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#a3a3a3"
             android:focusable="true"
             android:focusableInTouchMode="true"
+
+            android:id="@+id/inter"
             />
 
         <TextView
@@ -247,14 +253,6 @@
             android:text="期望月薪"
             android:textColor="#030303"
             android:textSize="20sp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"
-            android:textColor="#030303"
-            android:text="单位：千元 1K代表1000元"
-            android:textSize="18sp"
-            />
 
         <EditText
             android:layout_width="match_parent"

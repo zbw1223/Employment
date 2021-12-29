@@ -23,18 +23,8 @@ public class PositionEditAdapter extends SimpleAdapter {
     @Override
     public View getView(final int i, View convertView, ViewGroup viewGroup) {
         View view = super.getView(i, convertView, viewGroup);
-        final Button btn1 = (Button) view.findViewById(R.id.position_change);
         final Button btn2=(Button)view.findViewById(R.id.position_delete);
-       // btn1.setTag(i);//设置标签
-        btn1.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context.getApplicationContext(), "更改" , Toast.LENGTH_SHORT).show();
-            }
-        });
         btn2.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 Toast.makeText(context.getApplicationContext(), "删除" , Toast.LENGTH_SHORT).show();

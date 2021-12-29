@@ -1,4 +1,4 @@
-package com.example.recriutingsystem;
+package com.example.recriutingsystem.entity;
 
 public class Users {
     private int uid;

@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.recriutingsystem.entity.Recruit;
+
 import java.util.List;
 
 public class Searchee extends AppCompatActivity {

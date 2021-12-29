@@ -1,13 +1,15 @@
 package com.example.recriutingsystem;
 
-import android.os.Handler;
-import android.os.Looper;
 import android.util.Log;
 
-import java.lang.reflect.Array;
+import com.example.recriutingsystem.entity.Business;
+import com.example.recriutingsystem.entity.JobSeeker;
+import com.example.recriutingsystem.entity.Msg;
+import com.example.recriutingsystem.entity.Recruit;
+import com.example.recriutingsystem.entity.Users;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.LogRecord;
 
 public class UserService {
 
@@ -80,12 +82,12 @@ public class UserService {
     public List<Business> getBusinessList(){
         return httpUtil.getBusinessList();
     }
-    public void sendMessage(int jUid,int bUid,String msg)
+    public void sendMessage(int source,int destination,String message)
     {
-        httpUtil.sendMessage(jUid,bUid,msg);
+        httpUtil.sendMessage(source,destination,message);
     }
-    public List<Message> getChat(){
-        return httpUtil.getChat();
+    public List<Msg> getChat(int uid){
+        return httpUtil.getChat(uid);
     }
 
     public void alterSeeker(int uid,String name,String sex,String birthday,String degree,String eduBackground,String exp,String job,String city,int salary)

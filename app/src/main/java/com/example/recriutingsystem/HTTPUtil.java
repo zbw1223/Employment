@@ -1,8 +1,12 @@
 package com.example.recriutingsystem;
 
-import android.os.AsyncTask;
 import android.util.Log;
 
+import com.example.recriutingsystem.entity.Business;
+import com.example.recriutingsystem.entity.JobSeeker;
+import com.example.recriutingsystem.entity.Msg;
+import com.example.recriutingsystem.entity.Recruit;
+import com.example.recriutingsystem.entity.Users;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
@@ -18,7 +22,7 @@ import java.net.URLEncoder;
 import java.util.List;
 
 public class HTTPUtil {
-    String path="http://192.168.43.141:8080/test/";
+    String path="http://192.168.1.109:8080/test/";
 
     public HttpURLConnection connect(String url)
     {
@@ -47,7 +51,7 @@ public class HTTPUtil {
         }
 
     }
-    public Users Login(String userName,String password)
+    public Users Login(String userName, String password)
     {
         try {
             String action="Login?username="+ URLEncoder.encode(userName,"UTF-8")+"&"+"password="+URLEncoder.encode(password,"UTF-8");
@@ -123,18 +127,19 @@ public class HTTPUtil {
         String str=readStream(connect(url));
         return true;
     }
-    public void sendMessage(int jUid,int bUid,String msg)
+    public void sendMessage(int source,int destination,String message)
     {
-        String action="SendMessage?"+"jUid="+jUid+"&bUid="+bUid+"&msg="+msg;
+        String action="SendMessage?"+"source="+source+"&destination="+destination+"&message="+message;
         String url=path+action;
         String str=readStream(connect(url));
     }
-    public List<Message> getChat()
+    public List<Msg> getChat(int uid)
     {
-        String action="GetChat";
+        String action="GetChat?uid="+uid;
         String url=path+action;
         String str=readStream(connect(url));
-        return new GsonBuilder().create().fromJson(str,new TypeToken<List<Message>>(){}.getType());
+        List<Msg> chat=new GsonBuilder().create().fromJson(str,new TypeToken<List<Msg>>(){}.getType());
+        return chat;
     }
     public void alterSeeker(int uid,String name,String sex,String birthday,String degree,String eduBackground,String exp,String job,String city,int salary)
     {

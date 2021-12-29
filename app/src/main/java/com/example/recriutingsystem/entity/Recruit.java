@@ -1,4 +1,4 @@
-package com.example.recriutingsystem;
+package com.example.recriutingsystem.entity;
 
 public class Recruit {
     private int uid,rid;

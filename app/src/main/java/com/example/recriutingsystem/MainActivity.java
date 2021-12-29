@@ -3,14 +3,14 @@ package com.example.recriutingsystem;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.StrictMode;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.recriutingsystem.entity.Users;
 
 public class MainActivity extends AppCompatActivity {
     UserService userService=null;

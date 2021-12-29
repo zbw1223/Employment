@@ -28,7 +28,7 @@
         android:layout_height="30dp"
         android:layout_marginTop="5dp"
         android:textColor="@color/black"
-        android:text="像求职者介绍一下自己吧"
+        android:text="向求职者介绍一下自己吧"
         android:textSize="18sp" />
     <TextView
         android:layout_width="match_parent"
@@ -66,10 +66,10 @@
         android:minLines="2"
         android:gravity="top"
         android:background="@drawable/edit_background"
-        android:hint="请填写企业所在地"
+        android:hint="请填写企业所在城市"
         android:textColor="#000000"
         android:textColorHint="#a3a3a3"
-        android:id="@+id/location"
+        android:id="@+id/city"
         />
 
 
@@ -116,7 +116,7 @@
         android:textColor="#000000"
         android:textColorHint="#a3a3a3"
         android:hint="请填写联系方式"
-        android:id="@+id/cinfo"
+        android:id="@+id/email"
         />
 
     <Button
